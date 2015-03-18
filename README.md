@@ -1,0 +1,1 @@
+This is an open source project intended to demonstrate the ability of mobile web applications to use native app like functionality within the browser. This project aims to clear up some of the common misconceptions of what web applications can do by providing live demonstrations of what mobile browser are capable of doing.
