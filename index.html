@@ -59,6 +59,10 @@
         <button class="cameraOff">Turn Off</button>
       </section>
       <section>
+        <h2>Vibrate</h2>
+        <button class="vibrate">Vibrate your phone</button>
+      </section>
+      <section>
         <h2>Battery Status</h2>
         <div class="charging"></div>
         <div class="level"></div>
@@ -182,6 +186,10 @@
       } else {
          console.log("getUserMedia not supported");
       }
+    });
+
+    $('.vibrate').click(function(){
+      window.navigator.vibrate(500);
     });
   </script>
   <script>
