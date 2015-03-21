@@ -17,10 +17,15 @@
     .weather th{
       text-align: right;
     }
+
+    .vid{
+      height: 240px;
+      width: 320px;
+      margin: auto;
+    }
   </style>
 </head>
 <body>
-
   <nav class="top-bar">
     <ul class="title-area">
       <!-- Title Area -->
@@ -45,6 +50,14 @@
   <div class="row">
     <div class="large-12 columns">
       <h1>MobileCan</h1>
+      <section>
+        <h2>Camera</h2>
+        <div class="vid">
+          <video autoplay width=320 height=240></video>
+        </div>
+        <button class="cameraOn">Turn On</button>
+        <button class="cameraOff">Turn Off</button>
+      </section>
       <section>
         <h2>Battery Status</h2>
         <div class="charging"></div>
@@ -140,6 +153,35 @@
 
         });
       });
+    });
+
+    navigator.getUserMedia = ( navigator.getUserMedia ||
+                       navigator.webkitGetUserMedia ||
+                       navigator.mozGetUserMedia ||
+                       navigator.msGetUserMedia);
+
+    $('.cameraOn').click(function(){
+      if (navigator.getUserMedia) {
+         navigator.getUserMedia ({ video: true },
+            // successCallback
+            function(localMediaStream) {
+               var video = document.querySelector('video');
+               video.src = window.URL.createObjectURL(localMediaStream);
+               video.play();
+
+              $('.cameraOff').click(function(){
+                localMediaStream.stop();
+              });
+            },
+
+            // errorCallback
+            function(err) {
+               console.log("The following error occured: " + err);
+            }
+         );
+      } else {
+         console.log("getUserMedia not supported");
+      }
     });
   </script>
   <script>
