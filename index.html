@@ -23,6 +23,11 @@
       width: 320px;
       margin: auto;
     }
+
+    .show-picture{
+      max-width: 50%;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -51,12 +56,21 @@
     <div class="large-12 columns">
       <h1>MobileCan</h1>
       <section>
-        <h2>Camera</h2>
+        <h2>Camera Streaming</h2>
         <div class="vid">
           <video autoplay width=320 height=240></video>
         </div>
         <button class="cameraOn">Turn On</button>
         <button class="cameraOff">Turn Off</button>
+      </section>
+      <section>
+        <h2>Camera Still</h2>
+        <label for="take-picture">Why don&#39;t you take a picture?</label>
+        <input type="file" class="take-picture" accept="image/*">
+        <img src="about:blank" alt="" class="show-picture" height="300">
+        <div id="error"></div>
+      </section>
+        <!-- <input type="file" accept="video/*"> -->
       </section>
       <section>
         <h2>Vibrate</h2>
@@ -117,6 +131,7 @@
   <script src="js/battery.js"></script>
   <script src="js/geolocate.js"></script>
   <script src="js/camera-stream.js"></script>
+  <script src="js/image.js"></script>
   <script>
     $('.vibrate').click(function(){
       window.navigator.vibrate(500);
