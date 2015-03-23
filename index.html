@@ -114,80 +114,10 @@
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/battery.js"></script>
+  <script src="js/geolocate.js"></script>
+  <script src="js/camera-stream.js"></script>
   <script>
-    navigator.getBattery().then(function(battery) {
-
-      var showCharging = function(){
-        $('.charging').text("Battery charging? " + (battery.charging ? "Yes" : "No"));
-      };
-
-      var showLevel = function(){
-        $('.level').text("Battery level: " + battery.level * 100 + "%");
-      };
-
-      showCharging();
-      showLevel();
-
-      battery.addEventListener('chargingchange', showCharging);
-
-      battery.addEventListener('levelchange', showLevel);
-    });
-
-    if(! "geolocation" in navigator) {
-      $('.locate').hide();
-      $('.weather').append('Geolocation is not supported in your browser.')
-    }
-
-    $('.locate').click(function(){
-      navigator.geolocation.getCurrentPosition(function(position) {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-        var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon;
-        $.getJSON(url, function(data){
-          console.log(data);
-          var tempc = data.main.temp - 273.15; //kelvin to celsius
-          var tempf = tempc * 1.8 + 32;
-          var icon = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
-          $('.tempc').text(Math.round(tempc));
-          $('.tempf').text(Math.round(tempf));
-          $('.humid').text(data.main.humidity + '%');
-          $('.icon').attr('src', icon);
-          $('.desc').append(data.weather[0].description);
-          $('.city').text(data.name);
-
-        });
-      });
-    });
-
-    navigator.getUserMedia = ( navigator.getUserMedia ||
-                       navigator.webkitGetUserMedia ||
-                       navigator.mozGetUserMedia ||
-                       navigator.msGetUserMedia);
-
-    $('.cameraOn').click(function(){
-      if (navigator.getUserMedia) {
-         navigator.getUserMedia ({ video: true },
-            // successCallback
-            function(localMediaStream) {
-               var video = document.querySelector('video');
-               video.src = window.URL.createObjectURL(localMediaStream);
-               video.play();
-
-              $('.cameraOff').click(function(){
-                localMediaStream.stop();
-              });
-            },
-
-            // errorCallback
-            function(err) {
-               console.log("The following error occured: " + err);
-            }
-         );
-      } else {
-         console.log("getUserMedia not supported");
-      }
-    });
-
     $('.vibrate').click(function(){
       window.navigator.vibrate(500);
     });
