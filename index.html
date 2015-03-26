@@ -28,6 +28,19 @@
       max-width: 50%;
       display: none;
     }
+
+    .filters{
+      padding: 1em 0;
+    }
+
+    .sample-img{
+      max-width: 85%;
+      margin: .5em 0;
+    }
+
+    input[type=range]{
+      width: 50%;
+    }
   </style>
 </head>
 <body>
@@ -127,8 +140,26 @@
           </tr>
         </table>
       </section>
+      <section>
+        <h2>Filters</h2>
+        <img src="img/sample.jpg" class="sample-img">
+        <div class="button-bar">
+          <ul class="button-group">
+            <li><button class="toggleGrayscale">Grayscale</button></li>
+            <li><button class="toggleSepia">Sepia</button></li>
+            <li><button class="toggleInvert">Invert</button></li>
+          </ul>
+        </div>
+        <form id="imageEditor">
+          <label for="setBrightness">Brightness</label>
+          <input id="setBrightness" type="range" min="0" max="200" value="100">
+          <label for="setContrast">Contrast</label>
+          <input id="setContrast" type="range" min="50" max="200" value="100">
+          <div>
+            <input type="reset" form="imageEditor" id="reset" value="Reset" class="button small">
+          </div>
+        </div>
     </div>  
-
   </div>
 </body>
 
@@ -138,6 +169,7 @@
   <script src="js/camera-stream.js"></script>
   <script src="js/image.js"></script>
   <script src="js/video.js"></script>
+  <script src="js/filters.js"></script>
   <script>
     $('.vibrate').click(function(){
       window.navigator.vibrate(500);
