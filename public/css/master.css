@@ -1,0 +1,27 @@
+.weather th{
+  text-align: right;
+}
+
+.vid{
+  height: 240px;
+  width: 320px;
+  margin: auto;
+}
+
+.show-picture{
+  max-width: 50%;
+  display: none;
+}
+
+.filters{
+  padding: 1em 0;
+}
+
+.sample-img{
+  max-width: 85%;
+  margin: .5em 0;
+}
+
+input[type=range]{
+  width: 50%;
+}

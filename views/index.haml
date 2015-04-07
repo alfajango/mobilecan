@@ -1,0 +1,131 @@
+%nav{class: 'top-bar'}
+  %ul{class: 'title-area'}
+    %li{class: 'name'}
+      %h1
+        %a{href: 'index.html'} MobileCan
+    %li{class: 'toggle-topbar menu-icon'}
+      %a{href: '#'}
+        %span Menu
+  
+
+  %section{class:'top-bar-section'}
+    %ul{class: 'left'}
+      %li{class: 'divider'}
+      %li{class: 'active'}
+        %a{href: 'index.html'} Home
+      %li{class: 'divider'}
+    
+%div{class: 'row'}
+  %div{class: 'large-12 columns'}
+    %h1 MobileCan
+    %section
+      %h2 Camera Streaming
+      %div{class: 'vid'}
+        %video{autoplay: true, width: 320, height: 240}
+      
+      %button{class: 'cameraOn'} Turn On
+      %button{class: 'cameraOff'} Turn Off
+    
+      %section
+        %h2 Camera Still
+        %label{for: 'take-picture'}
+          Why don&#39;t you take a picture?
+        %input{type: 'file', id: 'take-picture', accept: 'image/*'}
+        %img{src: 'about:blank', alt: '', class: 'show-picture', height: '300'}
+        %div{id: 'error'}
+    
+    %section
+      %h2 Video
+      %label{for: 'upload-video'}
+        Shoot a video
+      %input{type: 'file', id: 'upload-video', accept: 'video/*'}
+    
+    %section
+      %h2 Vibrate
+      %button{class: 'vibrate'}
+        Vibrate your phone
+    
+    %section
+      %h2 Battery Status
+      %div{class: 'charging'}
+      %div{class: 'level'}
+    
+    %section
+      %h2 Input Types
+      %label{for: 'email'}
+        Enter your email
+      %input{type: 'email', id: 'email'}
+      %label{for: 'tel'}
+        Enter your phone number
+      %input{type: 'tel', id: 'tel'}
+      %label{for: 'num'}
+        Enter your lucky number
+      %input{type: 'number', id: 'num'}
+      %label{for: 'date'}
+        Enter a date
+      %input{type: 'date', id: 'date'}
+      %label{for: 'month'}
+        Enter a month
+      %input{type: 'month', id: 'month'}
+      %label{for: 'time'}
+        Enter a time
+      %input{type: 'time', id: 'time'}
+      %label{for: 'search'}
+        Search
+      %input{type: 'search', id: 'search', placeholder: 'Search'}
+      %label{for: 'color'}
+        Pick a color
+      %input{type: 'color', id: 'color'}
+    
+    %section{class: 'weather'}
+      %h2 Geolocation
+      %button{class: 'locate'} Get your local weather
+      %h3 
+        Weather for 
+        %span{class:'city'}
+      %table
+        %tr
+          %th
+            Temp (C)
+          %td{class:'tempc'}
+        %tr
+          %th
+            Temp (F)
+          %td{class:'tempf'}
+        %tr
+          %th
+            Humidity
+          %td{class:'humid'}
+        %tr
+          %th
+            Description
+          %td{class:'desc'}
+            %img{class: 'icon'}
+        
+    %section
+      %h2 Filters
+      %img{ src: 'img/sample.jpg', class: 'sample-img'}
+      %div{class: 'button-bar'}
+        %ul{class: 'button-group'}
+          %li
+            %button{class:'toggleGrayscale'}
+              Grayscale
+          %li
+            %button{class:'toggleSepia'}
+              Sepia
+          %li
+            %button{class:'toggleInvert'}
+              Invert
+        
+      
+      %form{id: 'imageEditor'}
+        %label{for: 'setBrightness'} Brightness
+        %input{id: "setBrightness", type: 'range', min: "0", max: '200', value: '100'}
+        %label{for: 'setContrast'} Contrast
+        %input{id: 'setContrast', type: 'range', min: '50', max: '200', value: '100'}
+        %div
+          %input{type: 'reset', form: 'imageEditor', id: 'reset', value: 'Reset', class: 'button small'}
+        
+      
+    
+

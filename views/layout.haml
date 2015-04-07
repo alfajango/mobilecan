@@ -1,0 +1,25 @@
+!!!
+%html
+  %head{lang: 'en-US'}
+    %meta{charset: 'utf-8'}
+    %title MobileCan
+    %link{href: 'css/foundation/foundation.min.css', rel: 'stylesheet'}
+    %link{href: 'css/foundation-mobile.css', rel: 'stylesheet'}
+    %link{href: 'css/master.css', rel: 'stylesheet'}
+  %body
+    = yield
+  %script{src: 'jquery-1.11.2.min.js'}
+  %script{src: 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'}
+  %script{src: 'js/battery.js'}
+  %script{src: 'js/geolocate.js'}
+  %script{src: 'js/camera-stream.js'}
+  %script{src: 'js/image.js'}
+  %script{src: 'js/video.js'}
+  %script{src: 'js/filters.js'}
+  %script{src: 'js/foundation.min.js'}
+  %script{src: 'js/foundation-mobile.js'}
+  :javascript
+    $(document).foundation();
+    $('.vibrate').click(function(){
+      window.navigator.vibrate(500);
+    });
