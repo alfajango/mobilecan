@@ -2,6 +2,7 @@
 %html
   %head{lang: 'en-US'}
     %meta{charset: 'utf-8'}
+    %meta{name: 'viewport', content:'width=device-width'}
     %title MobileCan
     %link{href: 'css/foundation/foundation.min.css', rel: 'stylesheet'}
     %link{href: 'css/foundation-mobile.css', rel: 'stylesheet'}
@@ -24,8 +25,7 @@
     %div.row{role: "main"}
       %div.large-12.columns
         = yield
-  %script{src: 'jquery-1.11.2.min.js'}
-  %script{src: 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'}
+  %script{src: 'js/jquery.min.js'}
   %script{src: 'js/battery.js'}
   %script{src: 'js/geolocate.js'}
   %script{src: 'js/camera-stream.js'}
