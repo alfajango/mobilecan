@@ -1,6 +1,9 @@
 %h2 Video
+
 %div{class: 'vid'}
-  %video{autoplay: true, width: 320, height: 240}
-%label{for: 'upload-video'}
-  Shoot a video
-%input{type: 'file', id: 'upload-video', accept: 'video/*'}
+  %video{src: @video_url, autoplay: true, width: 320, height: 240}
+%form{method: :post, action: '/video_upload', enctype: 'multipart/form-data'}
+  %label{for: 'video'}
+    Shoot a video
+  %input#video{type: 'file', name: 'video', accept: 'video/*'}
+  %input.button{type: 'submit', value: 'Submit'}

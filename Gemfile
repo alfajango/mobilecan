@@ -1,3 +1,6 @@
 source 'https://rubygems.org'
 gem 'sinatra', '>=1.1.2'
 gem 'haml'
+gem 'carrierwave'
+gem 'fog'
+gem 'dotenv'
