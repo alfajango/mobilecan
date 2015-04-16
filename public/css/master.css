@@ -1,3 +1,56 @@
+.top-bar .toggle-topbar.menu-icon a span{
+  color: #50b948;
+  box-shadow:0 10px 0 1px #50b948,0 16px 0 1px #50b948,0 22px 0 1px #50b948;
+}
+
+.logo{
+  text-transform: uppercase;
+  padding-left: 30px !important;
+  background-position: 0px 5px;
+}
+
+.mobile-list{
+  border-radius: 3px;
+}
+
+.mobile-list li a, .mobile-list li a:focus, .mobile-list li a:active, .logo{
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.mobile-list li a{
+  padding: 15px 30px 15px 45px;
+}
+
+.sprite-camera{
+  background-position: 8px -61px !important;
+}
+
+.sprite-filters{
+  background-position: 8px -451px !important;
+}
+
+.sprite-geolocate{
+  background-position: 6px -266px !important;
+}
+
+.sprite-input{
+  background-position: 8px -352px !important;
+}
+
+.sprite-streaming{
+  background-position: 10px -119px !important;
+}
+
+.sprite-vibrate{
+  background-position: 8px -558px !important;
+}
+
+.sprite-video{
+  background-position: 9px -196px !important;
+}
+
 .weather th{
   text-align: right;
 }
