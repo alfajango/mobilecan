@@ -1,3 +1,7 @@
+body, h1{
+  font-family: 'Oswald', sans-serif;
+}
+
 .top-bar .toggle-topbar.menu-icon a span{
   color: #50b948;
   box-shadow:0 10px 0 1px #50b948,0 16px 0 1px #50b948,0 22px 0 1px #50b948;
@@ -13,8 +17,9 @@
   color: #50b948;
 }
 
-.mobile-list{
-  border-radius: 3px;
+.mobile-list li{
+  border-left: none;
+  border-right: none;
 }
 
 .mobile-list li a, .mobile-list li a:focus, .mobile-list li a:active, .logo{
@@ -89,3 +94,4 @@ input[type=range]{
   font-size: 1.2em;
   line-height: 1.6em;
 }
+

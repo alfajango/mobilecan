@@ -1,20 +1,22 @@
-%h2 Filters
-%img{ src: 'img/sample.jpg', class: 'sample-img'}
-%div.button-bar
-  %ul.button-group
-    %li
-      %button.toggleGrayscale
-        Grayscale
-    %li
-      %button.toggleSepia
-        Sepia
-    %li
-      %button.toggleInvert
-        Invert  
-%form{id: 'imageEditor'}
-  %label{for: 'setBrightness'} Brightness
-  %input{id: "setBrightness", type: 'range', min: "0", max: '200', value: '100'}
-  %label{for: 'setContrast'} Contrast
-  %input{id: 'setContrast', type: 'range', min: '50', max: '200', value: '100'}
-  %div
-    %input{type: 'reset', form: 'imageEditor', id: 'reset', value: 'Reset', class: 'button small'}
+.row
+  .large-12.columns
+    %h2 Filters
+    %img{ src: 'img/sample.jpg', class: 'sample-img'}
+    %div.button-bar
+      %ul.button-group
+        %li
+          %button.toggleGrayscale
+            Grayscale
+        %li
+          %button.toggleSepia
+            Sepia
+        %li
+          %button.toggleInvert
+            Invert  
+    %form{id: 'imageEditor'}
+      %label{for: 'setBrightness'} Brightness
+      %input{id: "setBrightness", type: 'range', min: "0", max: '200', value: '100'}
+      %label{for: 'setContrast'} Contrast
+      %input{id: 'setContrast', type: 'range', min: '50', max: '200', value: '100'}
+      %div
+        %input{type: 'reset', form: 'imageEditor', id: 'reset', value: 'Reset', class: 'button small'}

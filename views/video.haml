@@ -1,9 +1,10 @@
-%h2 Video
-
-%div{class: 'vid'}
-  %video{src: @video_url, autoplay: true, width: 320, height: 240}
-%form{method: :post, action: '/video_upload', enctype: 'multipart/form-data'}
-  %label{for: 'video'}
-    Shoot a video
-  %input#video{type: 'file', name: 'video', accept: 'video/*'}
-  %input.button{type: 'submit', value: 'Submit'}
+.row
+  .large-12.columns
+    %h2 Video
+    %div{class: 'vid'}
+      %video{src: @video_url, autoplay: true, controls: true, width: 320, height: 240}
+    %form{method: :post, action: '/video_upload', enctype: 'multipart/form-data'}
+      %label{for: 'video'}
+        Shoot a video
+      %input#video{type: 'file', name: 'video', accept: 'video/*'}
+      %input.button{type: 'submit', value: 'Submit'}
