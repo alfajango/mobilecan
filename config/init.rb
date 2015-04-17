@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'carrierwave'
 require 'dotenv'
-require './video_uploader.rb'
+require './uploaders/video_uploader.rb'
 Dotenv.load
 
 configure :test do
