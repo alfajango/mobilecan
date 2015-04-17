@@ -6,7 +6,7 @@
 }
 
 #splash h1{
-  font-size: 3.5em;
+  font-size: 2.5em;
   text-transform: uppercase;
 }
 
@@ -15,15 +15,16 @@
 }
 
 .splash-logo{
-  background: url('../img/splash-logo.png') left 10px no-repeat;
+  background: url('../img/splash-logo.png') left 0px no-repeat;
   background-size: 47px;
-  padding: 10px 0px 10px 60px;
+  padding: 10px 0px 20px 65px;
 }
 
 #splash p{
-  font-size: 1.5em;
-  line-height: 1.8em;
+  font-size: 1.2em;
+  line-height: 1.5em;
   padding: 0 1em;
+  margin-top: 3em;
 }
 
 .green{
