@@ -5,10 +5,10 @@ require './config/init.rb'
 enable :sessions, :logging
 
 get '/' do
-  haml :index
+  haml :splash, layout: false
 end
 
-routes = ['camera_streaming', 'camera_still', 'geolocate', 'input_types', 'filters', 'vibrate']
+routes = ['home', 'camera_streaming', 'camera_still', 'geolocate', 'input_types', 'filters', 'vibrate']
 
 routes.each do |route|
   get "/#{route}" do

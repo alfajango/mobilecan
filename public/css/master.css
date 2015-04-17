@@ -9,6 +9,10 @@
   background-position: 0px 5px;
 }
 
+.green{
+  color: #50b948;
+}
+
 .mobile-list{
   border-radius: 3px;
 }
@@ -77,4 +81,11 @@
 
 input[type=range]{
   width: 50%;
+}
+
+.letus{
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.2em;
+  line-height: 1.6em;
 }

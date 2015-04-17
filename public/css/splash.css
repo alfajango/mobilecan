@@ -1,0 +1,31 @@
+#splash{
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding-top: 3em;
+}
+
+#splash h1{
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+
+#splash a{
+  color: #fff;
+}
+
+.splash-logo{
+  background: url('../img/splash-logo.png') left 10px no-repeat;
+  background-size: 47px;
+  padding: 10px 0px 10px 60px;
+}
+
+#splash p{
+  font-size: 1.5em;
+  line-height: 1.8em;
+  padding: 0 1em;
+}
+
+.green{
+  color: #50b948;
+}
