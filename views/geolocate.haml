@@ -1,26 +1,10 @@
 .row
   .large-12.columns
-    .weather
+    .geowrap
       %h2 Geolocation
-      %button.locate Get your local weather
-      %h3 
-        Weather for 
-        %span.city
-      %table
-        %tr
-          %th
-            Temp (C)
-          %td.tempc
-        %tr
-          %th
-            Temp (F)
-          %td.tempf
-        %tr
-          %th
-            Humidity
-          %td.humid
-        %tr
-          %th
-            Description
-          %td.desc
-            %img.icon
+      %button.locate Get your location
+      .geolocate
+        %h3 Coordinates:
+        %p.coords
+        %img.geoMap
+      .error.alert-box.app-alert.alert Geolocation is not available

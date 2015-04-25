@@ -95,3 +95,6 @@ input[type=range]{
   line-height: 1.6em;
 }
 
+.error, .geolocate{
+  display: none;
+}
