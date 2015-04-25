@@ -1,5 +1,4 @@
 var sampleImg = $('.sample-img');
-console.log(sampleImg);
 $('.toggleGrayscale').click(function(){
   sampleImg.toggleClass('grayscale');
   setLevels();  
