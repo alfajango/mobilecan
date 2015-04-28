@@ -1,17 +1,22 @@
-navigator.getBattery().then(function(battery) {
+if(typeof navigator.getBattery === 'function'){
+  navigator.getBattery().then(function(battery) {
 
-  var showCharging = function(){
-    $('.charging').text("Battery charging? " + (battery.charging ? "Yes" : "No"));
-  };
+    var showCharging = function(){
+      $('.charging').text("Battery charging? " + (battery.charging ? "Yes" : "No"));
+    };
 
-  var showLevel = function(){
-    $('.level').text("Battery level: " + battery.level * 100 + "%");
-  };
+    var showLevel = function(){
+      $('.level').text("Battery level: " + battery.level * 100 + "%");
+    };
 
-  showCharging();
-  showLevel();
+    showCharging();
+    showLevel();
 
-  battery.addEventListener('chargingchange', showCharging);
+    battery.addEventListener('chargingchange', showCharging);
 
-  battery.addEventListener('levelchange', showLevel);
-});
+    battery.addEventListener('levelchange', showLevel);
+  });
+}else{
+  $('.battery-error').show();
+}
+
