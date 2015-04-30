@@ -2,6 +2,10 @@ body, h1{
   font-family: 'Oswald', sans-serif;
 }
 
+body{
+  padding-bottom: 2em;
+}
+
 .top-bar .toggle-topbar.menu-icon a span{
   color: #50b948;
   box-shadow:0 10px 0 1px #50b948,0 16px 0 1px #50b948,0 22px 0 1px #50b948;
@@ -97,4 +101,8 @@ input[type=range]{
 
 .error, .geolocate{
   display: none;
+}
+
+.input_types label{
+  padding-top: .5em;
 }
