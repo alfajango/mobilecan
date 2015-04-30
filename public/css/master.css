@@ -64,6 +64,10 @@ body{
   background-position: 9px -196px !important;
 }
 
+.sprite-battery{
+  background-position: 8px -685px !important;
+}
+
 .weather th{
   text-align: right;
 }
