@@ -5,7 +5,3 @@ var showLoading = function(){
 var hideLoading = function(){
   $('.spinner-wrap').hide();
 }
-
-$('.videoForm').submit(function(){
-  showLoading();
-})

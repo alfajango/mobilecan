@@ -6,5 +6,5 @@
     %form{method: :post, action: '/video_upload', enctype: 'multipart/form-data', class: 'videoForm'}
       %label{for: 'video'}
         Shoot a video
-      %input#video{type: 'file', name: 'video', accept: 'video/*'}
-      %input.button{type: 'submit', value: 'Submit'}
+      %input#video{type: 'file', name: 'video', accept: 'video/*', class: 'videoInput'}
+      %input.button{type: 'submit', value: 'Submit', disabled: 'disabled', class: 'videoSubmit'}
