@@ -15,8 +15,12 @@ $('.locate').click(function(){
     $('.coords').text(lat + ', ' + lon);
     $('.geoMap').attr('src', url);
     $('.geolocate').show();
-  }, function(){
-    $('.error').show();
+  }, function(error){
+    if(error.code === 1){
+      $('.error').text('Access not granted. Please check your browser permissions.').show();
+    }else{
+      $('.error').text('Geolocation is not available').show();
+    }
   },
   {
     enableHighAccuracy: true,
