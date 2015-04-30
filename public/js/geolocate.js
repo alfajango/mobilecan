@@ -4,8 +4,11 @@ if(! "geolocation" in navigator) {
 }
 
 $('.locate').click(function(){
-
-  navigator.geolocation.getCurrentPosition(function(position) {
+  showLoading();
+  navigator.geolocation.getCurrentPosition(
+  // Success handler
+  function(position) {
+    hideLoading();
     $('.error').hide();
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
@@ -15,7 +18,10 @@ $('.locate').click(function(){
     $('.coords').text(lat + ', ' + lon);
     $('.geoMap').attr('src', url);
     $('.geolocate').show();
-  }, function(error){
+  }, 
+  // Error handler
+  function(error){
+    hideLoading();
     if(error.code === 1){
       $('.error').text('Access not granted. Please check your browser permissions.').show();
     }else{
@@ -24,7 +30,7 @@ $('.locate').click(function(){
   },
   {
     enableHighAccuracy: true,
-    timeout: 27000
+    timeout: 15000
   }
   );
 });

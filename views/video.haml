@@ -3,7 +3,7 @@
     %h2 Video
     %div{class: 'vid'}
       %video{src: @video_url, autoplay: true, controls: true, width: 320, height: 240}
-    %form{method: :post, action: '/video_upload', enctype: 'multipart/form-data'}
+    %form{method: :post, action: '/video_upload', enctype: 'multipart/form-data', class: 'videoForm'}
       %label{for: 'video'}
         Shoot a video
       %input#video{type: 'file', name: 'video', accept: 'video/*'}
