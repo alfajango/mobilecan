@@ -136,6 +136,20 @@ input[type=range]{
 
 }
 
+.video_input{
+  display: none;
+}
+
+.file_label{
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.filename{
+  padding: 1em 0;
+}
 /* Loading indicator */
 
 .spinner-wrap{
