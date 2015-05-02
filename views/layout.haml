@@ -40,6 +40,8 @@
             %a{href: 'filters'} Filters
           %li
             %a{href: 'vibrate'} Vibrate
+          %li
+            %a{href: 'accelerometer'} Accelerometer
           %li{class: 'divider'}
     %div{role: "main"}
       = yield
@@ -54,5 +56,6 @@
   %script{src: 'js/foundation-mobile.js'}
   %script{src: 'js/vibrate.js'}
   %script{src: 'js/video.js'}
+  %script{src: 'js/accelerometer.js'}
   :javascript
     $(document).foundation();

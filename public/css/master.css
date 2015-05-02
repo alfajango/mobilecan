@@ -150,6 +150,12 @@ input[type=range]{
 .filename{
   padding: 1em 0;
 }
+
+.shaken{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
 /* Loading indicator */
 
 .spinner-wrap{
