@@ -126,7 +126,7 @@ input[type=range]{
 
 }
 
-.error, .geolocate{
+.error, .geolocate, .cameraSwitch{
   display: none;
 
 }
