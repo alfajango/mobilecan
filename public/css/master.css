@@ -109,8 +109,7 @@ body{
 
 .sample-img{
   max-width: 85%;
-  margin: .5em 0;
-
+  margin: .5em 0 1.5em;
 }
 
 input[type=range]{
