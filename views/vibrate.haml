@@ -2,5 +2,21 @@
   .large-12.columns
     %h2 Vibrate
     .error.vibrate-error.alert-box.app-alert.alert Vibration is not supported in this browser.
-    %button.vibrate
-      Vibrate your phone
+    .vibration
+      %h3 Play eight bars worth of notes at 72 beats per minute
+      .note
+        %input{type: :radio, name: :note, id: :Eighth, value: :Eighth}
+        %label{for: :Eighth} Eighth Notes
+      .note
+        %input{type: :radio, name: :note, id: :Quarter, value: :Quarter, checked: true}
+        %label{for: :Quarter} Quarter Notes
+      .note
+        %input{type: :radio, name: :note, id: :Half, value: :Half}
+        %label{for: :Half} Half Notes
+      .note
+        %input{type: :radio, name: :note, id: :Whole, value: :Whole}
+        %label{for: :Whole} Whole Notes
+
+      %div
+        %input{type: :submit, class: 'vibrate button', value: 'Vibrate your phone'}
+            
