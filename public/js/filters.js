@@ -32,7 +32,16 @@ var setBodyLevels = function(){
 
 setBlur.change(setBodyLevels);
 setOpacity.change(setBodyLevels);
+
+$('#bodyEditor').on('reset', function (){
+  setTimeout(function() {
+    body.removeClass('invert grayscale')
+    setBodyLevels();
+  }, 0);
+});
+
 var sampleImg = $('.sample-img');
+
 $('.toggleImageGrayscale').click(function(){
   sampleImg.toggleClass('grayscale');
   setImageLevels();
@@ -78,7 +87,7 @@ setContrast.change(setImageLevels);
 
 $('#imageEditor').on('reset', function (){
   setTimeout(function() {
-    sampleImg.removeClass('invert sepia grayscale')
+    sampleImg.removeClass('sepia grayscale shadow')
     setImageLevels();
   }, 0);
 });
