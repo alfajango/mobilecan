@@ -126,12 +126,13 @@ input[type=range]{
   padding-top: .5em;
 }
 
-.video_input{
+.hide_input{
   display: none;
 }
 
 .file_label{
   border: 1px solid #ccc;
+  border-radius: 3px;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
