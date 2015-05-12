@@ -1,12 +1,20 @@
 if(typeof navigator.getBattery === 'function'){
   navigator.getBattery().then(function(battery) {
+    var levelBar = $('.level');
+    var level = battery.level * 100;
+    var levelText = $('.level-text');
 
     var showCharging = function(){
-      $('.charging').text("Battery charging? " + (battery.charging ? "Yes" : "No"));
+      if(battery.charging){
+        levelBar.addClass('charging');
+      }else{
+        levelBar.removeClass('charging');
+      }
     };
 
     var showLevel = function(){
-      $('.level').text("Battery level: " + battery.level * 100 + "%");
+      levelBar.css('width', level + '%');
+      levelText.text(level + '%');
     };
 
     showCharging();

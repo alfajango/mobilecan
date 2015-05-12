@@ -84,11 +84,6 @@ body{
 
 }
 
-.weather th{
-  text-align: right;
-
-}
-
 .vid{
   height: 240px;
   width: 320px;
@@ -99,12 +94,10 @@ body{
 .show-picture{
   max-width: 50%;
   display: none;
-
 }
 
 .filters{
   padding: 1em 0;
-
 }
 
 .sample-img{
@@ -127,12 +120,10 @@ input[type=range]{
 
 .error, .geolocate, .cameraSwitch{
   display: none;
-
 }
 
 .input_types label{
   padding-top: .5em;
-
 }
 
 .video_input{
@@ -183,7 +174,7 @@ input[type=range]{
   display: inline-block;
   margin-left: 2px;
   -webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
-          animation: sk-waveStretchDelay 1.2s infinite ease-in-out; 
+          animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
 }
 
 .sk-spinner-wave div:first-child{
@@ -224,4 +215,69 @@ input[type=range]{
     -webkit-transform: scaleY(1);
             transform: scaleY(1); 
   } 
+}
+
+/* Battery Status */
+@font-face {
+  font-family: 'Battery';
+  src: url('fonts/battery.eot');
+  src: url('fonts/battery.eot#iefix') format('embedded-opentype'),
+       url('fonts/battery.woff') format('woff'),
+       url('fonts/battery.ttf') format('truetype'),
+       url('fonts/battery.svg#battery') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.batteryCenter{
+  text-align: center;
+}
+.battery {
+  text-align: left;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+  border: 5px solid #000;
+  position: relative;
+  background-color: #fff;
+}
+
+.battery .level {
+  display: inline-block;
+  height: 100%;
+  width: 2%;
+}
+
+.battery .level{
+  background-color: #cccccc;
+}
+
+.battery .level.charging:before {
+  content: '\e800';
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  margin: 0 50%;
+  color: #666;
+  line-height: 30px;
+  font-family: 'Battery';
+  font-size: 25px;
+}
+
+.battery::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  right: -12px;
+  top: 6px;
+}
+
+.level-text{
+  margin-left: 10px;
+  font-size: 18px;
+  vertical-align: middle;
 }
