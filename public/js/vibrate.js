@@ -11,10 +11,12 @@ if(typeof navigator.vibrate === 'function'){
   };
 
   $('.vibrate').click(function(){
-    // navigator.vibrate(]);
-    // navigator.vibrate();
     var pattern = notes[$('[name="note"]:checked').val()]
     navigator.vibrate(pattern);
+  });
+
+  $('.stopVibrate').click(function(){
+    navigator.vibrate(0);
   });
 }else{
   $('.vibration').hide();
