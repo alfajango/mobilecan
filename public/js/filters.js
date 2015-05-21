@@ -1,5 +1,10 @@
 var body = $('body');
 
+$('#bodyEditor button').click(function(event){
+  event.preventDefault();
+  $(this).toggleClass('on');
+});
+
 $('#toggleInvert').click(function(){
   body.toggleClass('invert');
   setBodyLevels();
@@ -36,11 +41,17 @@ setOpacity.change(setBodyLevels);
 $('#bodyEditor').on('reset', function (){
   setTimeout(function() {
     body.removeClass('invert grayscale')
+    $('#bodyEditor button').removeClass('on');
     setBodyLevels();
   }, 0);
 });
 
 var sampleImg = $('.sample-img');
+
+$('#imageEditor button').click(function(event){
+  event.preventDefault();
+  $(this).toggleClass('on');
+});
 
 $('.toggleImageGrayscale').click(function(){
   sampleImg.toggleClass('grayscale');
@@ -87,7 +98,8 @@ setContrast.change(setImageLevels);
 
 $('#imageEditor').on('reset', function (){
   setTimeout(function() {
-    sampleImg.removeClass('sepia grayscale shadow')
+    sampleImg.removeClass('sepia grayscale shadow');
+    $('#imageEditor button').removeClass('on');
     setImageLevels();
   }, 0);
 });

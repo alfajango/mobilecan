@@ -2,15 +2,15 @@
   .large-12.columns
     %h2 Filters
     %h3 Filter the Whole Page
-    %div.button-bar
-      %ul.button-group
-        %li
-          %button#toggleInvert
-            Invert
-        %li
-          %button.toggleGrayscale
-            Grayscale
     %form{id: 'bodyEditor'}
+      %div.button-bar
+        %ul.button-group
+          %li
+            %button#toggleInvert
+              Invert
+          %li
+            %button.toggleGrayscale
+              Grayscale
       %label{for: 'setBlur'} Blur
       %input{id: "setBlur", type: 'range', min: "0", max: '3', value: '0'}
       %label{for: 'setOpacity'} Opacity
@@ -19,18 +19,18 @@
         %input{type: 'reset', form: 'bodyEditor', id: 'reset', value: 'Reset', class: 'button small'}
     %h3 Image Editor
     %img{ src: 'img/sample.jpg', class: 'sample-img'}
-    %div.button-bar
-      %ul.button-group
-        %li
-          %button.toggleImageGrayscale
-            Grayscale
-        %li
-          %button.toggleSepia
-            Sepia
-        %li
-          %button.toggleShadow
-            Drop Shadow
     %form{id: 'imageEditor'}
+      %div.button-bar
+        %ul.button-group
+          %li
+            %button.toggleImageGrayscale
+              Grayscale
+          %li
+            %button.toggleSepia
+              Sepia
+          %li
+            %button.toggleShadow
+              Drop Shadow
       %label{for: 'setBrightness'} Brightness
       %input{id: "setBrightness", type: 'range', min: "0", max: '200', value: '100'}
       %label{for: 'setContrast'} Contrast

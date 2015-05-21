@@ -107,7 +107,10 @@ body{
 
 input[type=range]{
   width: 50%;
+}
 
+.on{
+  background-color: #2284a1;
 }
 
 .letus{
