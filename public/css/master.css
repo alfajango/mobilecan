@@ -258,9 +258,8 @@ input[type=range]{
   display: block;
   height: 100%;
   width: 100%;
-  color: #fff;
-  margin: 0 50%;
-  color: #666;
+  margin: 0 39px;
+  color: #333;
   line-height: 30px;
   font-family: 'Battery';
   font-size: 25px;
@@ -274,7 +273,7 @@ input[type=range]{
   background-color: #000;
   position: absolute;
   right: -12px;
-  top: 6px;
+  top: 5px;
 }
 
 .level-text{

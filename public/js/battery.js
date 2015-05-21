@@ -1,5 +1,6 @@
 if(typeof navigator.getBattery === 'function'){
   navigator.getBattery().then(function(battery) {
+    console.log(battery);
     var levelBar = $('.level');
     var level = battery.level * 100;
     var levelText = $('.level-text');
@@ -13,6 +14,14 @@ if(typeof navigator.getBattery === 'function'){
     };
 
     var showLevel = function(){
+      if(level > 30){
+        var background = 'green';
+      }else if(level > 15){
+        var background = 'yellow'
+      }else{
+        var background = 'red';
+      }
+      levelBar.css('background-color', background);
       levelBar.css('width', level + '%');
       levelText.text(level + '%');
     };
@@ -26,5 +35,5 @@ if(typeof navigator.getBattery === 'function'){
   });
 }else{
   $('.battery-error').show();
+  $('.level').css('width', '100%');
 }
-
