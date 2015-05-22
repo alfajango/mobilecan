@@ -1,6 +1,5 @@
 if(typeof navigator.getBattery === 'function'){
   navigator.getBattery().then(function(battery) {
-    console.log(battery);
     var levelBar = $('.level');
     var level = battery.level * 100;
     var levelText = $('.level-text');
