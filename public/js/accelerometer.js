@@ -11,8 +11,12 @@ function deviceMotionHandler(eventData){
 
 window.addEventListener('deviceorientation', deviceorientationHandler, false);
 
+var xAxis = $('#x-axis');
+var yAxis = $('#y-axis');
+var orientation = $('#orientation');
+
 function deviceorientationHandler(eventData) {
-  $('#x-axis').val(Math.round(eventData.gamma));
-  $('#y-axis').val(Math.round(eventData.beta));
-  $('#orientation').val(Math.round(eventData.alpha));
+  xAxis.val(Math.round(eventData.gamma));
+  yAxis.val(Math.round(eventData.beta));
+  orientation.val(Math.round(eventData.alpha));
 };
