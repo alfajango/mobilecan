@@ -3,12 +3,19 @@
   %head{lang: 'en-US'}
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content:'width=device-width'}
+    %meta{name:'apple-mobile-web-app-capable', content:'yes'}
     %title MobileCan
     %link{rel: 'icon', type:'image/png', href: 'img/favicon.png'}
     %link{href: 'css/foundation/foundation.min.css', rel: 'stylesheet'}
     %link{href: 'css/foundation-mobile.css', rel: 'stylesheet'}
     %link{href:'http://fonts.googleapis.com/css?family=Oswald:400,700', rel: 'stylesheet', type: 'text/css'}
     %link{href: 'css/master.css', rel: 'stylesheet'}
+    %link{rel: 'manifest', href:'manifest.json'}
+    %link{rel: 'icon', sizes: '192x192', href: 'icons/higres.png'}
+    %link{href: 'icons/touch-icon-iphone.png', rel: 'apple-touch-icon'}
+    %link{href: 'icons/touch-icon-ipad.png', rel: 'apple-touch-icon', :sizes => '76x76'}
+    %link{href: 'icons/touch-icon-iphone-retina.png', rel: 'apple-touch-icon', sizes: '120x120'}
+    %link{href: 'icons/touch-icon-ipad-retina.png', rel: 'apple-touch-icon', sizes: '152x152'}
   %body
     %nav{class: 'top-bar'}
       %ul{class: 'title-area'}
