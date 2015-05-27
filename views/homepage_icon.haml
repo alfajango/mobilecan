@@ -1,15 +1,4 @@
-#index{"data-role" => "page"}
-  %div{"data-role" => "header"}
-    %h1 Bookmark Bubble
-  %div{"data-role" => "content"}
-    %p The bookmark bubble will show after a second, if:
-    %ul
-      %li It has not been previously dismissed too often
-      %li The application is not running in full screen mode
-      %li The bookmark bubble hash token is not present
-    %p Supported browsers:
-    %ul
-      %li iPhone / iPod / iPad Mobile Safari 3.0+
-    %form{:action => "example.html"}
-      %button{:onclick => "\n        var key = google.bookmarkbubble.Bubble.prototype.LOCAL_STORAGE_PREFIX \n                + google.bookmarkbubble.Bubble.prototype.DISMISSED_;\n        window.localStorage[key] = String(0);"}
-        Reset Counter
+.row
+  .large-12.columns
+    %h2 Homepage Icon
+    %p You can add an icon for this or any other web application to your homescreen via the menu of your browser.
