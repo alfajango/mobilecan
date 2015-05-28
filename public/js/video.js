@@ -7,5 +7,4 @@ $('.video_input').change(function(){
   var fullPath = $(this).val();
   var filename = fullPath.replace(/^.*[\\\/]/, '')
   $('.filename').text(filename);
-
 });
