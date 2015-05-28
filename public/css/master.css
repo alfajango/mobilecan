@@ -75,10 +75,13 @@ body{
 .sprite-home{
   background-position: 8px -980px !important;
 }
+
 .stream{
   height: 240px;
   width: 320px;
   margin: auto;
+  visibility: hidden;
+  background: orange;
 }
 
 .show-picture{

@@ -37,6 +37,7 @@ if(typeof navigator.getUserMedia !== 'function'){
     // successCallback
     function(localMediaStream) {
       var video = document.querySelector('video');
+      $('.stream').css('visibility', 'visible');
       video.src = window.URL.createObjectURL(localMediaStream);
       video.play();
 
