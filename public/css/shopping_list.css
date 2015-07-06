@@ -1,0 +1,12 @@
+.listTable{
+  width: 500px;
+}
+
+.addItem{
+  width: 600px;
+}
+
+input[type=text], label{
+  display: inline-block;
+  width: 400px;
+}

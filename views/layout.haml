@@ -8,7 +8,7 @@
     %link{rel: 'icon', type:'image/png', href: 'img/favicon.png'}
     %link{href: 'css/foundation/foundation.min.css', rel: 'stylesheet'}
     %link{href: 'css/foundation-mobile.css', rel: 'stylesheet'}
-    %link{href:'http://fonts.googleapis.com/css?family=Oswald:400,700', rel: 'stylesheet', type: 'text/css'}
+    / %link{href:'http://fonts.googleapis.com/css?family=Oswald:400,700', rel: 'stylesheet', type: 'text/css'}
     %link{href: 'css/master.css', rel: 'stylesheet'}
     %link{rel: 'manifest', href:'manifest.json'}
     %link{rel: 'icon', sizes: '192x192', href: 'icons/higres.png'}
@@ -52,6 +52,8 @@
             %a{href: 'accelerometer'} Accelerometer
           %li
             %a{href: 'homepage_icon'} Homepage Icon
+          %li
+            %a{href: 'offline'} Offline Mode
           %li{class: 'divider'}
     %div{role: "main"}
       = yield

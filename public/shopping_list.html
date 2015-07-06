@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html manifest='main.appcache'>
+  <head lang='en-US'>
+    <title>Shopping List</title>
+    <meta charset='utf-8'>
+    <meta content='width=device-width' name='viewport'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <link href='img/favicon.png' rel='icon' type='image/png'>
+    <link href='css/foundation/foundation.min.css' rel='stylesheet'>
+    <link href='css/foundation-mobile.css' rel='stylesheet'>
+    <link href='css/shopping_list.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div role='main'>
+      <div class='row'>
+        <div class='large-12 columns'>
+          <h2>Shopping List</h2>
+          <form class='addItem'>
+            <label for='add'>Add Item</label>
+            <input id='add' type='text'>
+            <input class='button medium round' type='submit' value='Add'>
+            <table class='listTable'>
+              <col><col style="width: 10px;">
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src='js/jquery.min.js'></script>
+  <script src='js/shopping_list.js'></script>
+</html>

@@ -8,7 +8,8 @@ get '/' do
   haml :home
 end
 
-routes = ['battery_status', 'camera_streaming', 'camera_still', 'geolocate', 'input_types', 'filters', 'vibrate', 'accelerometer', 'homepage_icon']
+routes = ['battery_status', 'camera_streaming', 'camera_still', 'geolocate',
+  'input_types', 'filters', 'vibrate', 'accelerometer', 'homepage_icon', 'offline']
 
 routes.each do |route|
   get "/#{route}" do
