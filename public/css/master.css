@@ -76,6 +76,10 @@ body{
   background-position: 8px -980px !important;
 }
 
+.sprite-offline{
+  background-position: 8px -1182px !important;
+}
+
 .stream{
   height: 240px;
   width: 320px;
