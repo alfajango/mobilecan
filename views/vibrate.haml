@@ -1,6 +1,10 @@
 .row
   .large-12.columns
     %h2 Vibrate
+    %p
+      %a{href: 'http://caniuse.com/#feat=vibration', target: '_blank'}
+        Current Browser Support
+
     .error.vibrate-error.alert-box.app-alert.alert Vibration is not supported in this browser.
     .vibration
       %h3 Play eight bars worth of notes at 72 beats per minute
@@ -19,4 +23,3 @@
       %div
         %input{type: :submit, class: 'vibrate button', value: 'Vibrate your phone'}
         %input{type: :button, class: 'stopVibrate button', value: 'Cancel'}
-            

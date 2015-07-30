@@ -2,6 +2,9 @@
   .large-12.columns
     %h2 Camera Streaming
     .error.stream-error.alert-box.app-alert.alert Camera streaming is not supported in this browser.
+    %p
+      %a{href: 'http://caniuse.com/#feat=stream', target: '_blank'}
+        Current Browser Support
     .stream
       %video{autoplay: true, width: 320, height: 240}
 

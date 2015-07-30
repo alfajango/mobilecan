@@ -2,9 +2,12 @@
   .large-12.columns
     .geowrap
       %h2 Geolocation
+      %p
+        %a{href: 'http://caniuse.com/#feat=geolocation', target: '_blank'}
+          Current Browser Support
       %button.locate Get your location
       .geolocate
         %h3 Coordinates:
         %p.coords
         %img.geoMap
-      .error.alert-box.app-alert.alert 
+      .error.alert-box.app-alert.alert

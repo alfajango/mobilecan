@@ -1,6 +1,9 @@
 .row
   .large-12.columns
     %h2 Battery Status
+    %p
+      %a{href: 'http://caniuse.com/#feat=battery-status', target: '_blank'}
+        Current Browser Support
     .error.battery-error.alert-box.app-alert.alert Battery Status is not supported in this browser.
     .batteryWrap
       %p This indicator lets you know how much power your battery has left and whether or not it is currently charging. It will update itself as the battery status changes.
