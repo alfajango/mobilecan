@@ -17,9 +17,9 @@
     %link{href: 'icons/touch-icon-iphone-retina.png', rel: 'apple-touch-icon', sizes: '120x120'}
     %link{href: 'icons/touch-icon-ipad-retina.png', rel: 'apple-touch-icon', sizes: '152x152'}
   %body
-    %nav{class: 'top-bar'}
-      %ul{class: 'title-area'}
-        %li{class: 'name'}
+    %nav.top-bar
+      %ul.title-area.row
+        %li.name
           %h1
             %a.logo{href: '/'}
               Mobile
@@ -27,9 +27,9 @@
         %li{class: 'toggle-topbar menu-icon'}
           %a{href: '#'}
             %span
-      %section{class:'top-bar-section'}
-        %ul{class: 'left'}
-          %li{class: 'divider'}
+      %section.top-bar-section
+        %ul.left
+          %li.divider
           %li
             %a{href: '/'} Home
           %li
@@ -54,7 +54,7 @@
             %a{href: 'homepage_icon'} Homepage Icon
           %li
             %a{href: 'offline'} Offline Mode
-          %li{class: 'divider'}
+          %li.divider
     %div{role: "main"}
       = yield
   %script{src: 'js/jquery.min.js'}
