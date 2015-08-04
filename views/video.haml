@@ -1,6 +1,6 @@
 .row
   .large-12.columns
-    %h2 Video
+    %h2 Video Capture
     %div{class: 'vid'}
       %video{src: @video_url, autoplay: true, controls: true, width: 320, height: 240}
     %form{method: :post, action: '/video_upload', enctype: 'multipart/form-data', class: 'video_form'}

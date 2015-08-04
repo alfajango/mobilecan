@@ -8,12 +8,12 @@ get '/' do
   haml :home
 end
 
-routes = ['battery_status', 'camera_streaming', 'camera_still', 'geolocate',
-  'input_types', 'filters', 'vibrate', 'accelerometer', 'homepage_icon', 'offline']
+routes = [:battery_status, :camera_streaming, :image_capture, :geolocate,
+  :input_keyboards, :filters, :vibrate, :accelerometer, :homescreen_icon, :offline]
 
 routes.each do |route|
   get "/#{route}" do
-    haml route.to_sym
+    haml route
   end
 end
 
