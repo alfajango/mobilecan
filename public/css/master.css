@@ -4,6 +4,7 @@ body, h1{
 
 body{
   padding-bottom: 2em;
+  text-rendering: geometricPrecision;
 }
 
 .top-bar .toggle-topbar.menu-icon a span{
@@ -111,10 +112,10 @@ input[type=range]{
   background-color: #2284a1;
 }
 
-.letus{
+.intro p{
   margin: 1em 0;
-  font-size: 1.2em;
-  line-height: 1.6em;
+  font-size: 1em;
+  line-height: 1.45em;
 }
 
 .error, .geolocate, .cameraSwitch{
