@@ -3,49 +3,98 @@
     %h2 Input Keyboards
     %p The new input types added in HTML5 allow modern mobile browsers to bring up a custom keyboard based on what type of input is selected.
     %p Give some of these examples a try to see for yourself how easy it is input data into a mobile web application. Note that no JavaScript was needed for any of the examples.
-    %p (Browser support may vary for some input types so you may end up a seeing a regular keyboard.)
-    %label{for: 'email'}
-      Enter your email
-    %input{type: 'email', id: 'email'}
-    %p
-      %a{href: 'http://caniuse.com/#feat=input-email-tel-url', target: '_blank'}
-        Current Browser Support
+    %p Browser support may vary for some input types so you may end up a seeing a regular keyboard. We included example screenshots from Chrome on Android to give you an idea of each input type looks like.
     %label{for: 'tel'}
       Enter your phone number
     %input{type: 'tel', id: 'tel'}
     %p
+      #phone-modal.reveal-modal
+        %img{src: '/img/phone.png', alt: 'Phone number keyboard'}
+        %a.close-reveal-modal
+          &#215;
+      %a.example{href: '#', 'data-reveal-id': 'phone-modal'}
+        Example
       %a{href: 'http://caniuse.com/#feat=input-email-tel-url', target: '_blank'}
         Current Browser Support
     %label{for: 'date'}
       Enter a date
     %input{type: 'date', id: 'date'}
     %p
+      #date-modal.reveal-modal
+        %img{src: '/img/date.png', alt: 'Date input'}
+        %a.close-reveal-modal
+          &#215;
+      %a.example{href: '#', 'data-reveal-id': 'date-modal'}
+        Example
       %a{href: 'http://caniuse.com/#feat=input-datetime', target: '_blank'}
         Current Browser Support
     %label{for: 'month'}
       Enter a month
     %input{type: 'month', id: 'month'}
     %p
+      #month-modal.reveal-modal
+        %img{src: '/img/month.png', alt: 'Month input'}
+        %a.close-reveal-modal
+          &#215;
+      %a.example{href: '#', 'data-reveal-id': 'month-modal'}
+        Example
       %a{href: 'http://caniuse.com/#feat=input-datetime', target: '_blank'}
         Current Browser Support
     %label{for: 'time'}
       Enter a time
     %input{type: 'time', id: 'time'}
     %p
+      #time-modal.reveal-modal
+        %img{src: '/img/time.png', alt: 'Time input'}
+        %a.close-reveal-modal
+          &#215;
+      %a.example{href: '#', 'data-reveal-id': 'time-modal'}
+        Example
       %a{href: 'http://caniuse.com/#feat=input-datetime', target: '_blank'}
         Current Browser Support
     %label{for: 'num'}
       Enter your lucky number
     %input{type: 'number', id: 'num'}
     %p
+      #number-modal.reveal-modal
+        %img{src: '/img/number.png', alt: 'Number keyboard'}
+        %a.close-reveal-modal
+          &#215;
+      %a.example{href: '#', 'data-reveal-id': 'number-modal'}
+        Example
       %a{href: 'http://caniuse.com/#feat=input-number', target: '_blank'}
         Current Browser Support
     %label{for: 'search'}
       Search
     %input{type: 'search', id: 'search', placeholder: 'Search'}
+    %p
+      #search-modal.reveal-modal
+        %img{src: '/img/search.png', alt: 'Search keyboard'}
+        %a.close-reveal-modal
+          &#215;
+      %a.example{href: '#', 'data-reveal-id': 'search-modal'}
+        Example
+    %label{for: 'email'}
+      Enter your email
+    %input{type: 'email', id: 'email'}
+    %p
+      #email-modal.reveal-modal
+        %img{src: '/img/email.png', alt: 'Email keyboard'}
+        %a.close-reveal-modal
+          &#215;
+      %a.example{href: '#', 'data-reveal-id': 'email-modal'}
+        Example
+      %a{href: 'http://caniuse.com/#feat=input-email-tel-url', target: '_blank'}
+        Current Browser Support
     %label{for: 'color'}
       Pick a color
     %input{type: 'color', id: 'color'}
     %p
+      #color-modal.reveal-modal
+        %img{src: '/img/color.png', alt: ''}
+        %a.close-reveal-modal
+          &#215;
+      %a.example{href: '#', 'data-reveal-id': 'color-modal'}
+        Example
       %a{href: 'http://caniuse.com/#feat=input-color', target: '_blank'}
         Current Browser Support

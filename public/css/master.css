@@ -152,6 +152,16 @@ input[type=range]{
   display: inline;
 }
 
+a.example:after{
+  content: "\007C";
+  color: #000;
+}
+
+.reveal-modal{
+  text-align: center;
+}
+
+
 /* Loading indicator */
 
 .spinner-wrap{
