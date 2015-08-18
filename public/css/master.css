@@ -1,10 +1,16 @@
-body, h1{
-  font-family: 'Oswald', sans-serif;
+html{
+  background-color: #ddd;
 }
 
 body{
   padding-bottom: 2em;
   text-rendering: geometricPrecision;
+  max-width: 800px;
+  margin: auto;
+}
+
+body, h1{
+  font-family: 'Oswald', sans-serif;
 }
 
 .top-bar .toggle-topbar.menu-icon a span{
@@ -23,6 +29,7 @@ body{
 }
 
 .mobile-list li{
+  padding-left: 5px;
   border-left: none;
   border-right: none;
 }
