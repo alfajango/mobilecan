@@ -55,6 +55,8 @@
             %a{href: 'homescreen_icon'} Homescreen Icon
           %li
             %a{href: 'offline'} Offline Mode
+          %li
+            %a{href: 'vector'} Vector Graphic
           %li.divider
     %div{role: "main"}
       = yield
@@ -70,5 +72,6 @@
   %script{src: 'js/vibrate.js'}
   %script{src: 'js/video.js'}
   %script{src: 'js/accelerometer.js'}
+  %script{src: 'js/vector.js'}
   :javascript
     $(document).foundation();

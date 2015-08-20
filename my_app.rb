@@ -9,7 +9,8 @@ get '/' do
 end
 
 routes = [:battery_status, :camera_streaming, :image_capture, :geolocate,
-  :input_keyboards, :filters, :vibrate, :accelerometer, :homescreen_icon, :offline]
+  :input_keyboards, :filters, :vibrate, :accelerometer, :homescreen_icon,
+  :offline, :vector]
 
 routes.each do |route|
   get "/#{route}" do
