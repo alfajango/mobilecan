@@ -88,6 +88,10 @@ body, h1{
   background-position: 8px -1182px !important;
 }
 
+.sprite-vector{
+  background-position: 8px -1373px !important;
+}
+
 .stream{
   height: 240px;
   width: 320px;
@@ -168,6 +172,28 @@ a.example:after{
   text-align: center;
 }
 
+.vectorImg{
+  max-width: 95%;
+  height: auto;
+}
+
+.vectorWrap{
+  overflow: hidden;
+  margin-bottom: 1.5em;
+}
+
+.vectorPage{
+  text-align: center;
+}
+
+.vectorPage p{
+  text-align: left;
+  margin: 1em 0;
+}
+
+.vectorPage h2{
+  text-align: left;
+}
 
 /* Loading indicator */
 
