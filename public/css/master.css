@@ -1,16 +1,24 @@
-html{
-  background-color: #ddd;
-}
-
 body{
-  padding-bottom: 2em;
   text-rendering: geometricPrecision;
-  max-width: 800px;
-  margin: auto;
 }
 
 body, h1{
   font-family: 'Oswald', sans-serif;
+}
+
+nav{
+  max-width: 900px;
+  margin: auto;
+}
+
+#main{
+  max-width: 900px;
+  margin: auto;
+}
+
+footer{
+  background-color: #000;
+  height: 60px;
 }
 
 .top-bar .toggle-topbar.menu-icon a span{
@@ -26,6 +34,13 @@ body, h1{
 
 .green{
   color: #50b948;
+}
+
+.mobile-list{
+  margin: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-radius: 2px 2px 0 0;
 }
 
 .mobile-list li{
