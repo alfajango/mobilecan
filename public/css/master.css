@@ -1,5 +1,10 @@
 body{
   text-rendering: geometricPrecision;
+  background: #000;
+}
+
+.wrap{
+  background-color: #fff;
 }
 
 body, h1{
@@ -14,16 +19,26 @@ nav{
 #main{
   max-width: 900px;
   margin: auto;
+  min-height: 600px;
 }
 
 footer{
-  background-color: #000;
   height: 60px;
+  margin-top: 30px;
 }
 
 .top-bar .toggle-topbar.menu-icon a span{
   color: #50b948;
   box-shadow:0 10px 0 1px #50b948,0 16px 0 1px #50b948,0 22px 0 1px #50b948;
+}
+
+.top-bar-section{
+  max-width: 900px;
+  margin: auto;
+}
+
+.menu-wrap{
+  background-color: #fff;
 }
 
 .logo{

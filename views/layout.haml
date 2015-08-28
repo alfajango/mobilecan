@@ -67,8 +67,9 @@
               %a{href: 'http://os.alfajango.com/'} Open Source
             %li
               %a{href: 'http://www.alfajango.com/design'} Design
-    %div#main{role: 'main'}
-      = yield
+    .wrap
+      #main{role: 'main'}
+        = yield
     %footer
   %script{src: 'js/jquery.min.js'}
   %script{src: 'js/master.js'}
