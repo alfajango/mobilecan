@@ -1,15 +1,12 @@
-require 'rubygems'
-require 'sinatra'
+require 'cuba'
+require 'cuba/safe'
+require 'cuba/haml'
+require 'haml'
 require 'carrierwave'
 require 'dotenv'
 require './uploaders/video_uploader.rb'
+
 Dotenv.load
-
-configure :test do
-  # rspec context looks for views relative to /spec dir unless specified
-  set :views, File.dirname(__FILE__) + '/../views'
-end
-
 
 CarrierWave.configure do |config|
   config.fog_credentials = {
@@ -19,3 +16,14 @@ CarrierWave.configure do |config|
   }
   config.fog_directory  = ENV['S3_BUCKET']
 end
+
+Cuba.use Rack::Session::Cookie, secret: '__a_very_long_string__'
+
+Cuba.plugin Cuba::Safe
+Cuba.plugin Cuba::Haml
+Cuba.settings[:haml][:template_engine] = "haml"
+
+Cuba.use Rack::Static,
+  root: 'public',
+  urls: ['/js', '/css', '/img', 'manifest.json',
+    'main.appcache', 'shopping_list.html']

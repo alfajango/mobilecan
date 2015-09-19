@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
-gem 'sinatra', '>=1.1.2'
+ruby '2.2.3'
+
+gem 'cuba'
+gem 'shotgun'
+gem 'dotenv'
 gem 'haml'
+gem 'cuba-haml'
 gem 'carrierwave'
 gem 'fog'
-gem 'dotenv'
