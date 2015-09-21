@@ -2,7 +2,7 @@ require './config/init.rb'
 
 routes = ['battery_status', 'camera_streaming', 'image_capture', 'geolocate',
   'input_keyboards', 'filters', 'vibrate', 'accelerometer', 'homescreen_icon',
-  'offline', 'vector']
+  'offline', 'vector', 'video_capture']
 
 Cuba.define do
   on get do
@@ -15,10 +15,6 @@ Cuba.define do
         haml route
       end
     end
-
-    on 'video' do
-      haml 'video', video_url: session[:video_url]
-    end
   end
 
   on post do
@@ -26,8 +22,7 @@ Cuba.define do
       on param('video') do |video|
         uploader = VideoUploader.new
         uploader.store! video
-        session[:video_url] = uploader.url
-        res.redirect '/video'
+        haml 'video', video_url: uploader.url
       end
     end
   end

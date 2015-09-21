@@ -1,0 +1,9 @@
+.row
+  .large-12.columns
+    %h2 Video Capture
+    %form{method: :post, action: '/video_upload', enctype: 'multipart/form-data', class: 'video_form'}
+      %label.file_label{for: 'video'}
+        Shoot a video
+      %input#video.hide_input{type: 'file', name: 'video', accept: 'video/*'}
+      %p.filename
+      %input.button{type: 'submit', value: 'Submit', disabled: 'disabled', class: 'video_submit'}
