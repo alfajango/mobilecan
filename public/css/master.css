@@ -1,10 +1,11 @@
 body{
   text-rendering: geometricPrecision;
-  background: #000;
+  background-color: #000;
 }
 
 .wrap{
   background-color: #fff;
+  padding-bottom: 30px;
 }
 
 body, h1{
@@ -22,9 +23,17 @@ nav{
   min-height: 600px;
 }
 
+.headerBG{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 45px;
+  background-color: #000;
+}
+
 footer{
   height: 60px;
-  margin-top: 30px;
 }
 
 .top-bar .toggle-topbar.menu-icon a span{
