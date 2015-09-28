@@ -52,7 +52,7 @@ footer{
 
 .logo{
   text-transform: uppercase;
-  padding-left: 30px !important;
+  padding-left: 30px;
   background-position: 0px 5px;
 }
 
@@ -84,51 +84,51 @@ footer{
 }
 
 .sprite-camera{
-  background-position: 8px -61px !important;
+  background-position: 8px -61px;
 }
 
 .sprite-filters{
-  background-position: 8px -451px !important;
+  background-position: 8px -451px;
 }
 
 .sprite-geolocate{
-  background-position: 5px -266px !important;
+  background-position: 5px -266px;
 }
 
 .sprite-input{
-  background-position: 6px -352px !important;
+  background-position: 6px -352px;
 }
 
 .sprite-streaming{
-  background-position: 10px -119px !important;
+  background-position: 10px -119px;
 }
 
 .sprite-vibrate{
-  background-position: 5px -558px !important;
+  background-position: 5px -558px;
 }
 
 .sprite-video{
-  background-position: 9px -196px !important;
+  background-position: 9px -196px;
 }
 
 .sprite-battery{
-  background-position: 8px -685px !important;
+  background-position: 8px -685px;
 }
 
 .sprite-acc{
-  background-position: 8px -820px !important;
+  background-position: 8px -820px;
 }
 
 .sprite-home{
-  background-position: 8px -980px !important;
+  background-position: 8px -980px;
 }
 
 .sprite-offline{
-  background-position: 8px -1182px !important;
+  background-position: 8px -1182px;
 }
 
 .sprite-vector{
-  background-position: 8px -1373px !important;
+  background-position: 8px -1373px;
 }
 
 .stream{
@@ -298,39 +298,39 @@ a.example:after{
 }
 .sk-spinner-wave .sk-rect2 {
   -webkit-animation-delay: -1.1s;
-          animation-delay: -1.1s; 
+          animation-delay: -1.1s;
 }
 .sk-spinner-wave .sk-rect3 {
   -webkit-animation-delay: -1s;
-          animation-delay: -1s; 
+          animation-delay: -1s;
 }
 .sk-spinner-wave .sk-rect4 {
   -webkit-animation-delay: -0.9s;
-          animation-delay: -0.9s; 
+          animation-delay: -0.9s;
 }
 .sk-spinner-wave .sk-rect5 {
   -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s; 
+          animation-delay: -0.8s;
 }
 @-webkit-keyframes sk-waveStretchDelay {
   0%, 40%, 100% {
     -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4); 
+            transform: scaleY(0.4);
 }
   20% {
     -webkit-transform: scaleY(1);
-            transform: scaleY(1); 
-  } 
+            transform: scaleY(1);
+  }
 }
 @keyframes sk-waveStretchDelay {
   0%, 40%, 100% {
     -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4); 
+            transform: scaleY(0.4);
 }
   20% {
     -webkit-transform: scaleY(1);
-            transform: scaleY(1); 
-  } 
+            transform: scaleY(1);
+  }
 }
 
 /* Battery Status */

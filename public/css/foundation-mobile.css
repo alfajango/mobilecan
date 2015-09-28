@@ -33,7 +33,7 @@
     padding-bottom: 15px;
     padding-top: 15px; }
     .mobile-list li a:active, .mobile-list li a:focus {
-      background: #eee; }
+      background-color: #eee; }
     .mobile-list li a .mobile-icon {
       float: left;
       display: block;
